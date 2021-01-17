@@ -62,7 +62,8 @@
                 line-height: 1.714;
                 letter-spacing: 0.03em;
             }
-        }
+    }
+
      .advantages-icon{
         justify-content: center;
         display: flex;
@@ -72,17 +73,17 @@
         height: 120px;
         background: #F5F4FA;
      }
-    
-     
 
-    
      .advantages{
         display: flex;
         flex-wrap: wrap;
+        margin-right: -30px;
      }
+    .advantages-icon-item{
+        margin-right: 30px;
+}
     
-    }
-
+}
 
 
 
