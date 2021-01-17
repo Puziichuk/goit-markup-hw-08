@@ -170,6 +170,7 @@
     }
     
     .section-footer{
+        display: flex;
         align-items: baseline;
     }
     
@@ -206,8 +207,10 @@
     }
     }
     
+    
+    
     .section-join{
-        padding: 60px 137px;
+        margin-left: 70px;
     }
     
     .social-list.list{
@@ -215,9 +218,14 @@
     }
     
     
+    .section-subscribe{
+        margin-left: 93px;
+    }
+    
+    
     .button.subscribe{
-        margin-top: 20px;
         height: 50px;
+        margin-left: 12px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -230,7 +238,7 @@
     
     
     .form-input-footer{
-        width: 450px;
+        width: 358px;
         height: 50px;
         border: 1px solid rgba(255, 255, 255, 0.3);
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -241,13 +249,9 @@
         
     }
     .form{
+        display: flex;
         flex-direction: row;
         margin-top: 20px;
-    }
-
-    .contacts-footer{
-        text-align: center;
-
     }
 
 }
@@ -341,6 +345,8 @@
     
     }
     }
+    
+    
     
     .section-join{
         margin-left: 70px;
