@@ -170,13 +170,6 @@ p {
     height: 120px;
     background: #F5F4FA;
   }
-  .advantages-icon-item:not(:last-child) {
-    margin-right: 30px;
-  }
-  .advantages-icon-item {
-    flex-basis: calc(100% / 2);
-    margin: 15px;
-  }
   .advantages {
     display: flex;
     flex-wrap: wrap;
@@ -571,10 +564,6 @@ p {
     flex-wrap: wrap;
     list-style: none;
   }
-  clients-item {
-    flex-basis: calc((100% - 2 * 30px) / 2);
-    margin: 15px;
-  }
   .clients-link {
     width: 210px;
     height: 90px;
@@ -609,10 +598,6 @@ p {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-  }
-  clients-item {
-    flex-basis: calc((100% - 2 * 30px) / 3);
-    margin: 15px;
   }
   .clients-link {
     width: 226px;
@@ -1035,6 +1020,9 @@ p {
   .contacts-footer {
     text-align: center;
   }
+  .section-subscribe {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1078,7 +1066,9 @@ p {
   }
   .section-footer {
     display: flex;
+    flex-wrap: wrap;
     align-items: baseline;
+    justify-content: space-between;
   }
   .join-title {
     font-weight: bold;
@@ -1109,16 +1099,15 @@ p {
   }
   .section-join {
     margin-left: 70px;
+    margin-bottom: 60px;
+    padding-right: 89px;
   }
   .social-list.list {
     margin-top: 20px;
   }
-  .section-subscribe {
-    margin-left: 93px;
-  }
   .button.subscribe {
+    margin-top: 20px;
     height: 50px;
-    margin-left: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1127,7 +1116,7 @@ p {
     margin-left: 10px;
   }
   .form-input-footer {
-    width: 358px;
+    width: 450px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1136,9 +1125,19 @@ p {
     padding-left: 16px;
   }
   .form {
+    flex-wrap: wrap;
     display: flex;
     flex-direction: row;
     margin-top: 20px;
+  }
+  .section-subscribe {
+    text-align: center;
+    margin-top: 60px;
+    padding-left: 166px;
+    padding-right: 152px;
+  }
+  .contacts-footer {
+    padding-left: 76px;
   }
 }
 

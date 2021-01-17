@@ -12,12 +12,7 @@
         list-style: none;
   
     }
-
-    clients-item{
-    flex-basis: calc((100% - 2 * 30px) / 2);
-    margin: 15px;
-
-    }
+   
     
     .clients-link{
         width: 210px;
@@ -45,6 +40,7 @@
     .clients-item:not(:last-child){
         margin-bottom: 30px;
     }
+   
     
     .footer-icon{
         fill: #FFFFFF;
@@ -66,11 +62,6 @@
       
         }
     
-        clients-item{
-        flex-basis: calc((100% - 2 * 30px) / 3);
-        margin: 15px;
-    
-        }
         
         .clients-link{
             width: 226px;
