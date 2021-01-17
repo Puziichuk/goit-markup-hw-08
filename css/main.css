@@ -320,7 +320,7 @@ p {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .team.list {
     display: flex;
     flex-wrap: wrap;
@@ -394,6 +394,7 @@ p {
   }
   .item.team:not(:last-child) {
     margin-right: 30px;
+    margin-bottom: 30px;
   }
 }
 
@@ -1036,7 +1037,7 @@ p {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .address {
     display: inline-block;
     width: 231px;
