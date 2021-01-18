@@ -85,6 +85,11 @@
         text-align: center;
 
     }
+
+    .social-list.list{
+        justify-content: center;
+        margin-top: 20px;
+    }
     
     
     
@@ -219,15 +224,13 @@
     }
     
     .section-join{
-        margin-left: 70px;
-        margin-bottom: 60px;
         padding-right: 89px;
     }
     
     .social-list.list{
+        justify-content: center;
         margin-top: 20px;
     }
-    
     
     .button.subscribe{
         margin-top: 20px;
@@ -272,6 +275,11 @@
 
     .contacts-footer{
         padding-left: 76px;
+    }
+
+    .section-join{
+        text-align: center;
+
     }
 }
 
