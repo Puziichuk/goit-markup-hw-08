@@ -1,28 +1,28 @@
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
 
+
+    .header-desktop{
+        display: none;
+    }
+
     .header{
         border-bottom: 1px solid #ECECEC;
+        position: relative;
     }
     
-    .navigation{
-        display: flex;
-        align-items: center;
-    }
-    
-    .container.nav{
-        display: flex;
-        align-items: center;
-    
-    }
-    
+.navigation-mobile{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
     
     /* logo */
     
     .logo{
         padding-top: 25px;
+        padding-left: 15px;
         padding-bottom: 25px;
-        margin-right: 93px;
         color: #000000;
         font-family: 'Raleway', sans-serif;
         font-weight: bold;
@@ -35,18 +35,14 @@
      }
     
      /* site nav */
-     .site-nav.list{
-         display: flex;
-     }
+   
      .site-nav .link{
          display: block;
         color: var(--primary-text-color);
         font-weight: 500;
-        font-size: 14px;
-        line-height: 1.143;
+        font-size: 18px;
+        line-height: 1.16;
         letter-spacing: 0.02em;
-        padding-top: 20px;
-        padding-bottom: 20px;
         
         &:hover,
         &:focus {
@@ -61,22 +57,23 @@
         &::after{
             content: "";
             display: block;
-            width: 100%;
+            width: 61px;
             height: 4px;
             background: #2196F3;
             border-radius: 2px;
             opacity: 0;
             position: absolute;
-            bottom: -14px;
             transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            margin: 0 auto;
         }
         &:hover::after{
             opacity: 1;
         }
-    
+
         &:not(:last-child){
-            margin-right: 50px;
+            margin-bottom: 40px;
         }
+    
     }
     
     
@@ -86,10 +83,11 @@
         color: var(--secondary-text-color);
         font-style: normal;
         font-weight: 500;
-        font-size: 14px;
-        line-height: 1.143;
+        font-size: 18px;
+        line-height: 1.16;
         letter-spacing: 0.02em;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     
         &:hover,
         &:focus{
@@ -100,21 +98,26 @@
         &:focus .header-icon{
            fill:var(--accent-color);
         }
+
+    }
+
+    .auth-nav .item{
+        display: block;
+        &:not(:last-child){
+            margin-bottom: 16px;
+        }
     }
     
     
     
     .auth-nav.list{
-        display: flex;
-        margin-left: auto;
+       text-align: center;
     }
     
     .address-nav{
         margin-left: auto;
     }
-    .auth-nav .item + .item{
-        margin-left: 50px;
-    }
+   
     
     .header-icon{
         fill: var(--secondary-text-color);
@@ -129,16 +132,59 @@
         &::after{
             content: "";
             display: block;
-            width: 100%;
+            width: 61px;
             height: 4px;
             background: #2196F3;
             border-radius: 2px;
-            position: absolute;
-            bottom: -14px;
         }
     } 
-    
+
+    .menu-button .icon-cross{
+        display: none;
     }
+    
+    .menu-button.is-open .icon-cross{
+
+    display: block;
+    }
+
+    .menu-button.is-open .icon-menu{
+
+    display: none;
+    }
+
+    .menu-container{
+     display: none;
+     position: absolute;
+     top: 100%;
+     width: 100%;
+     left: 0;
+
+     background-color: white;
+    height: 393px;
+
+
+     &.is-open{
+        display: block;
+    }
+ }
+
+ .menu-button{
+     width: 40px;
+     height: 40px;
+     border: none;
+     background-color: white;
+     margin-top: 20px;
+     margin-right: 20px;
+ }
+
+
+ .mobile-header{
+     display: flex;
+     justify-content: space-between;
+ }
+
+}
 
 
 
@@ -146,6 +192,10 @@
 
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
+
+        .mobile-menu{
+            display: none;
+        }
 
         .header{
             border-bottom: 1px solid #ECECEC;
@@ -294,14 +344,14 @@
     
     
     
-    
-
-
-
 
 
 
 @media screen and (min-width: 1200px) {
+
+    .mobile-menu{
+        display: none;
+    }
 
 .header{
     border-bottom: 1px solid #ECECEC;

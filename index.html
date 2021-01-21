@@ -14,37 +14,75 @@
 <body>
 <!-- header -->
 <header class="header">
-   <div class="container nav">
+   <div class="header-desktop">
+    <div class="container nav">
+        <nav class="navigation"> 
+            <a href="/" class="logo"><span class="logo-accent">Web</span>Studio</a> 
+        <ul class="site-nav list">
+            <li class="site-nav-item"><a href="" class="link current">Студия</a></li>
+            <li class="site-nav-item"><a href="./ portfolio.html" class="link">Портфолио</a></li>
+            <li class="site-nav-item"><a href="#" class="link">Контакты</a></li>
+        </ul> 
+        </nav> 
+         <address class="address-nav">
+            <ul class="auth-nav list">
+                <li class="item"><a href="mailto:info@devstudio.com" class="link"> 
+                    <svg class="header-icon" width="16px" height="12px">
+                        <use href="./images/sprite.svg#icon-envelope">
+                    </use>
+                    </svg>
+                <span lang="en">info@devstudio.com</span> 
+                </a></li>
+                <li class="item"><href href="tel:+380961111111" class="link">
+                    <svg class="header-icon" width="16px" height="12px">
+                        <use href="./images/sprite.svg#icon-smartphone">
+                    </use>
+                    </svg>+38 096 111 11 11</a></li>
+            </ul> 
+        </address>
+       </div>
+   </div>
+  <div class="mobile-menu"> 
+      <div class="mobile-header">
+    <a href="/" class="logo"><span class="logo-accent">Web</span>Studio</a>
+    <button class="menu-button is-open" type="button" aria-expanded="true" aria-controls="menu-container" data-menu-button>
+     <svg class="icon-close-mobile" width="40px" height="40px" data-modal-close>
+         <use class="icon-cross" href="./images/sprite.svg#icon-close_mobile2"></use>
+         <use class="icon-menu" href="./images/sprite.svg#icon-menu_mobile2"></use>
+     </svg>
+    </button>
+   </div>
+    <div class="menu-container is-open" id="menu-container" data-menu>
+    <div class="navigation-mobile">
     <nav class="navigation">
-        <a href="/" class="logo"><span class="logo-accent">Web</span>Studio</a>
     <ul class="site-nav list">
         <li class="site-nav-item"><a href="" class="link current">Студия</a></li>
         <li class="site-nav-item"><a href="./ portfolio.html" class="link">Портфолио</a></li>
-        <li class="site-nav-item"><a href="#" class="link">Контакты</a></li>
-    </ul>
+        <li class="site-nav-item"><a href="#" class="link">Контакты</a></li></ul>
     </nav>
-    <address class="address-nav">
-        <ul class="auth-nav list">
-            <li class="item"><a href="mailto:info@devstudio.com" class="link"> 
-                <svg class="header-icon" width="16px" height="12px">
-                    <use href="./images/sprite.svg#icon-envelope">
-                </use>
-                </svg>
-            <span lang="en">info@devstudio.com</span> 
-            </a></li>
-            <li class="item"><href href="tel:+380961111111" class="link">
-                <svg class="header-icon" width="16px" height="12px">
-                    <use href="./images/sprite.svg#icon-smartphone">
-                </use>
-                </svg>+38 096 111 11 11</a></li>
-        </ul>
-    </address>
-   </div>
+</div>
+<div class="contacts-mobile">
+    <ul class="auth-nav list">
+        <li class="item"><a href="mailto:info@devstudio.com" class="link"> 
+            <svg class="header-icon" width="16px" height="12px">
+                <use href="./images/sprite.svg#icon-envelope">
+            </use>
+            </svg>
+        <span lang="en">info@devstudio.com</span> 
+        </a></li>
+        <li class="item"><href href="tel:+380961111111" class="link">
+            <svg class="header-icon" width="16px" height="12px">
+                <use href="./images/sprite.svg#icon-smartphone">
+            </use>
+            </svg>+38 096 111 11 11</a></li>
+    </ul>
+</div>
+   </div></div>
 </header>
 <!--main -->
 <main>
 <!--Effective solutions for your business  -->
-<section class="hero">
+<!-- <section class="hero">
         <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
          <button type="button" value="Заказать услугу" class="button" data-modal-open>Заказать услугу</button> 
            <div class="backdrop is-hidden" data-modal>
@@ -102,7 +140,7 @@
              </div> 
         </div>
         
-</section>
+</section> -->
 <!-- advantages -->
 
 <section class="section advantages">
@@ -422,4 +460,5 @@
 </div>
 </footer> 
 <script src="./modal.js"></script>
+<script src="./menu.js"></script>
 </body>
