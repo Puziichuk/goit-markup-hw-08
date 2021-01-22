@@ -1623,6 +1623,10 @@ p {
     height: 4px;
     background: #2196F3;
     border-radius: 2px;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50%);
   }
   .menu-button .icon-cross {
     display: none;
@@ -1641,6 +1645,7 @@ p {
     left: 0;
     background-color: white;
     height: 393px;
+    z-index: 1;
   }
   .menu-container.is-open {
     display: block;
@@ -1650,12 +1655,21 @@ p {
     height: 40px;
     border: none;
     background-color: white;
-    margin-top: 20px;
+    margin-top: 15px;
     margin-right: 20px;
   }
   .mobile-header {
     display: flex;
     justify-content: space-between;
+  }
+  .icon-cross:hover, .icon-cross:focus,
+  .icon-menu:hover,
+  .icon-menu:focus {
+    background-color: var(--accent-color);
+  }
+  .icon-cross,
+  .icon-menu {
+    fill: black;
   }
 }
 
