@@ -1,6 +1,5 @@
 
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
 
     .section.clients{
         padding-top: 60px;
@@ -16,7 +15,7 @@
    
     
     .clients-link{
-        width: 210px;
+        width: 200px;
         height: 90px;
         display: flex;
         justify-content: center;
@@ -64,7 +63,7 @@
     letter-spacing: 0.03em;
 
     }
-    }
+    
     
 
     @media screen and (min-width: 768px)and (max-width: 1199px) {
@@ -174,7 +173,7 @@
 }
 
 .clients-item:not(:last-child){
-    margin-right: 30px;
+    margin-right: 29px;
 }
 
 .footer-icon{
