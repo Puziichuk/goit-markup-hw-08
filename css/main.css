@@ -1097,8 +1097,21 @@ p {
   list-style: none;
 }
 
+.clients-item {
+  margin-bottom: 30px;
+  margin-right: 29px;
+}
+
+.clients-item:nth-child(2n) {
+  margin-right: 1px;
+}
+
+.clients-item:nth-last-child(-n + 2) {
+  margin-bottom: 0;
+}
+
 .clients-link {
-  width: 200px;
+  width: 210px;
   height: 90px;
   display: flex;
   justify-content: center;
@@ -1118,19 +1131,6 @@ p {
   border-color: var(--accent-color);
 }
 
-.clients-item {
-  margin-bottom: 30px;
-  margin-right: 29px;
-}
-
-.clients-item:nth-child(2n) {
-  margin-right: 1px;
-}
-
-.clients-item:nth-last-child(-n + 2) {
-  margin-bottom: 0;
-}
-
 .footer-icon {
   fill: #FFFFFF;
 }
@@ -1146,7 +1146,7 @@ p {
   letter-spacing: 0.03em;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .section.clients {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -1178,9 +1178,6 @@ p {
     margin-bottom: 30px;
     margin-right: 29px;
   }
-  .clients-item:nth-child(3n) {
-    margin-right: 1px;
-  }
   .clients-item:nth-last-child(-n + 3) {
     margin-bottom: 0;
   }
@@ -1196,6 +1193,12 @@ p {
     font-size: 28px;
     line-height: 1.17;
     letter-spacing: 0.03em;
+  }
+  .clients-item:not(:last-child) {
+    margin-right: 29px;
+  }
+  .clients-item:nth-child(3n) {
+    margin-right: 1px;
   }
 }
 
